@@ -1,0 +1,199 @@
+:root {
+    --small-margin: 8px;
+    --standard-padding: 16px;
+    --standard-margin: 16px;
+    --large-margin: 28px;
+    --standard-background-color: whitesmoke;
+    --standard-color: black;
+    --second-color: whitesmoke;
+    --standatd-border-radius: 8px;
+    --small-border-radius: 4px;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--standard-background-color);
+}
+
+header {
+    padding: var(--standard-padding);
+    background-color: darkcyan;
+
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__link {
+    all: unset;
+    cursor: pointer;
+    color: var(--standard-color);
+}
+
+.nav__link.active {
+    color: var(--standard-background-color);
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__item:not(:first-child) {
+    margin-left: var(--standard-margin);
+}
+
+.hero > h1 {
+    text-align: center;
+    margin-top: var(--standard-margin);
+    margin-bottom: var(--standard-margin);
+
+}
+
+.articles {
+    padding: var(--large-margin);
+}
+
+.container {
+    width: 80vw;
+    max-width: 760px;
+    min-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: floralwhite;
+    border-radius: var(--standatd-border-radius);
+    padding: var(--standard-padding);
+}
+
+.container > h2 {
+    text-align: center;
+}
+
+.articles__list {
+    margin: 0;
+    padding-top: var(--standard-padding);
+    padding-bottom: var(--standard-padding);
+}
+
+.articles__item {
+    box-shadow: -1px 15px 23px -9px rgba(0,0,0,0.28);
+    -webkit-box-shadow: -1px 15px 23px -9px rgba(0,0,0,0.28);
+    -moz-box-shadow: -1px 15px 23px -9px rgba(0,0,0,0.28);
+    padding: var(--standard-padding);
+    border-radius: 0 0 var(--standatd-border-radius) var(--standatd-border-radius) ;
+}
+
+.articles__item:not(:first-child) {
+    margin-top: var(--large-margin);
+
+}
+
+.articles__item img {
+    width: -webkit-fill-available;
+    border-radius: var(--standatd-border-radius);
+    cursor: pointer;
+}
+
+.articles__item img:hover {
+    box-shadow: -1px 8px 53px -9px rgba(0,0,0,0.28);
+    -webkit-box-shadow: -1px 8px 53px -9px rgba(0,0,0,0.28);
+    -moz-box-shadow: -1px 8px 53px -9px rgba(0,0,0,0.28);
+}
+
+.articles__link-wrapper {
+    margin: var(--small-margin);
+}
+
+.articles a {
+    all: unset;
+    cursor: pointer;
+    color: var(--standard-color);
+}
+
+.articles a:hover {
+    text-decoration: underline;
+}
+
+.tables {
+    background-color: beige;
+    margin-bottom: var(--standard-margin);
+}
+
+.tables__table {
+    width: 100%;
+}
+
+.tables__table th {
+    /*width: 33.33%;*/
+}
+
+.tables__table td {
+    text-align: center;
+}
+
+.articles__main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100dvh;
+    justify-content: space-between;
+}
+
+.author {
+    margin-top: var(--standard-margin);
+    margin-bottom: var(--standard-margin);
+}
+
+.author__container {
+    display: flex;
+    box-shadow: -1px 8px 53px -9px rgba(0,0,0,0.28);
+    -webkit-box-shadow: -1px 8px 53px -9px rgba(0,0,0,0.28);
+    -moz-box-shadow: -1px 8px 53px -9px rgba(0,0,0,0.28);
+    text-align: center;
+}
+
+.author__info-wrapper {
+    width: 48%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.author__image {
+    max-width: 50%;
+    width: 100%;
+    border-radius: var(--standatd-border-radius);
+}
+
+.author__contacts-container {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: var(--standard-padding);
+    margin: var(--small-margin);
+    border-radius: var(--small-border-radius);
+    background-color: darkslategrey;
+}
+
+.author__contacts-container a {
+    color: var(--second-color);
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    padding: var(--standard-padding);
+    background-color: darkslategray;
+    color: var(--second-color);
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    /*margin-top: auto;*/
+}
+
+
