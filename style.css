@@ -1,5 +1,6 @@
 :root {
     --small-margin: 8px;
+    --small-padding: 8px;
     --standard-padding: 16px;
     --standard-margin: 16px;
     --large-margin: 28px;
@@ -59,7 +60,7 @@ header {
 .container {
     width: 80vw;
     max-width: 760px;
-    min-width: 340px;
+    min-width: 240px;
     margin-left: auto;
     margin-right: auto;
     background-color: floralwhite;
@@ -193,7 +194,35 @@ footer {
     display: flex;
     align-items: center;
     justify-self: center;
-    /*margin-top: auto;*/
 }
 
+@media screen and (max-width: 340px) {
+    .tables {
+        font-size: 0.8em;
+    }
 
+    .author__image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        max-width: 75%;
+    }
+
+    .author h2 {
+        margin-top: var(--small-margin);
+        font-size: 0.8em;
+    }
+
+    .author__info-wrapper {
+        width: 95%;
+    }
+
+    .author__container {
+        flex-direction: column;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+}
