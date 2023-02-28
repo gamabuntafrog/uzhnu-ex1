@@ -171,7 +171,6 @@ header {
 }
 
 .author__contacts-container {
-    margin-top: auto;
     display: flex;
     justify-content: space-evenly;
     padding: var(--standard-padding);
